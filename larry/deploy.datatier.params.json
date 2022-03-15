@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "parSqlName": {
+      "value": "larry-az-sqlmi-x-002"
+    },
+    "parSubnetResourceId": {
+      "value": "/subscriptions/82ac0bb1-dc93-4740-bc06-dad2c80d8c43/resourceGroups/network-rg/providers/Microsoft.Network/virtualNetworks/LarryVnet/subnets/DataTierSubnet"
+    },
+    "parSqlAdministratorLogin": {
+      "value": "larrydbadmin"
+    },
+    "parSqlAdministratorLoginPassword": {
+      "value": "df9SDodio39@E@W"
+    }
+  }
+}
