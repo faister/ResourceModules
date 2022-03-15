@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "parAseName": {
+      "value": "larry-az-appse-x-001"
+    },
+    "roleAssignments": {
+      "value": [
+        {
+          "roleDefinitionIdOrName": "Reader",
+          "principalIds": [
+            "ab7cff5c-4fca-42e8-9e65-4be5e53125f2"
+          ]
+        }
+      ]
+    }
+  }
+}
