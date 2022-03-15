@@ -6,7 +6,7 @@ targetScope = 'subscription'
 
 // RG parameters
 @description('Optional. The name of the resource group to deploy')
-param resourceGroupName string = 'network-rg'
+param resourceGroupName string = 'apptier-rg'
 
 @description('Optional. The location to deploy into')
 param location string = deployment().location
