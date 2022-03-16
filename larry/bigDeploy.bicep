@@ -24,8 +24,8 @@ param primaryAgentPoolProfile array = [
     storageProfile: 'ManagedDisks'
     type: 'VirtualMachineScaleSets'
     mode: 'System'
-    vnetSubnetID: '/subscriptions/82ac0bb1-dc93-4740-bc06-dad2c80d8c43/resourceGroups/network-rg/providers/Microsoft.Network/virtualNetworks/LarryVnet/subnets/AppTierSubnet'
-    serviceCidr: '10.0.0.0/24'
+    //vnetSubnetID: '/subscriptions/82ac0bb1-dc93-4740-bc06-dad2c80d8c43/resourceGroups/network-rg/providers/Microsoft.Network/virtualNetworks/LarryVnet/subnets/AppTierSubnet'
+    serviceCidr: '10.0.4.0/24'
     maxPods: 30
   }
 ]
@@ -44,6 +44,9 @@ param databases array = [
     serverName: 'Curly-SQL'
     skuName: 'GP_Gen5_2'
     maxSizeBytes: 34359738368
+    tier: 'GeneralPurpose'
+    collation: 'SQL_Latin1_General_CP1_CI_AS'
+    licenseType: 'LicenseIncluded'
   }
 ]
 
